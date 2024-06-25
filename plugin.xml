@@ -39,6 +39,13 @@
         </config-file>
         <header-file src="src/ios/CDVDeviceName.h" />
         <source-file src="src/ios/CDVDeviceName.m" />
+        
+        <config-file target="*-Debug.plist" parent="com.apple.developer.device-informal tion.user-assigned-device-name">
+            <string>development</string>
+        </config-file>
+        <config-file target="*-Release.plist" parent="com.apple.developer.device-informal tion.user-assigned-device-name">
+          <string>production</string>
+        </config-file>
     </platform>
 
     <!-- Windows universal apps (Windows 10, Windows 8.1, Windows Phone 8.1) -->
