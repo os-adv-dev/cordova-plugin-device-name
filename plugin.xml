@@ -40,11 +40,11 @@
         <header-file src="src/ios/CDVDeviceName.h" />
         <source-file src="src/ios/CDVDeviceName.m" />
         
-        <config-file target="*-Debug.plist" parent="com.apple.developer.device-information.user-assigned-device-name">
-            <string>development</string>
+        <config-file target="Entitlements-Debug.plist" parent="com.apple.developer.device-information.user-assigned-device-name">
+            <true/>
         </config-file>
-        <config-file target="*-Release.plist" parent="com.apple.developer.device-information.user-assigned-device-name">
-          <string>production</string>
+        <config-file target="Entitlements-Release.plist" parent="com.apple.developer.device-information.user-assigned-device-name">
+          <true/>
         </config-file>
     </platform>
 
